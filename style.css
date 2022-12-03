@@ -30,9 +30,22 @@ body{
 }
 
 @keyframes boxbox {
+    0%{
+        -webkit-transform: translateX(0px) translateY(0px) rotate(360deg);
+    }
+    100%{
+        -webkit-transform: translateX(1315px) translateY(559px);
+    }
+}
+
+
+
+/* Not with rotate */
+
+/* @keyframes boxbox {
     0%   {top: 0px;}
     0%   {left: 0px;}
     
     100% {top: calc(609px - 50px);}
     100% {left: calc(100% - 50px);}
-}
+} */
