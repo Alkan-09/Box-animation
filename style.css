@@ -5,31 +5,38 @@
 }
 
 body{
-    height: 100vh;
-    max-height: 100vh;
+    background: black;
+    padding: 0;
+    margin: 0;
     width: 100%;
     max-width: 100%;
-    background: rebeccapurple;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
+button{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 90px;
+    padding: 5px;
+    margin-left: 10px;
+    z-index: 1;
+    text-transform: uppercase;
+    color: white;
+    background: none;
+    font-size: 18px;
+    border: 1px solid rgba(42, 42, 213, 0.667);
+  }
 
-.box-container{
-    position: relative;
-}
 
-.box-container .box{
-    z-index: 2;
-}
 
-.box-container .box span{
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    animation: boxbox 10s;
-}
 
 /* @keyframes boxbox {
     0%{
